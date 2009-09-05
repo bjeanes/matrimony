@@ -12,6 +12,7 @@ begin
     gem.authors = ["Bodaniel Jeanes"]
     gem.rubyforge_project = "matrimony"
     gem.add_development_dependency "rspec"
+    gem.add_development_dependency "mocha", "0.9.7"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
