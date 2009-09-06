@@ -4,6 +4,10 @@ require 'matrimony'
 require 'spec'
 require 'spec/autorun'
 
+gem 'clispec'
+require 'clispec'
+require 'clispec/example_groups/runner'
+
 # Interesting reads
 # http://devver.net/blog/2009/08/unit-testing-filesystem-interaction/
 # http://devver.net/blog/2009/07/a-dozen-or-so-ways-to-start-sub-processes-in-ruby-part-2/
