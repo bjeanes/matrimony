@@ -15,6 +15,8 @@ begin
     gem.add_development_dependency "mocha", ">= 0.9.7"
     gem.add_development_dependency "reek"
     gem.add_development_dependency "roodi"
+    
+    gem.executables << 'matrimony'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
