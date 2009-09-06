@@ -6,7 +6,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "matrimony"
     gem.summary = %Q{Pairing helper for commit messages}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.description = %Q{Pairing helper for commit messages}
     gem.email = "me@bjeanes.com"
     gem.homepage = "http://github.com/bjeanes/matrimony"
     gem.authors = ["Bodaniel Jeanes"]
