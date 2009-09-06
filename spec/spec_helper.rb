@@ -4,11 +4,13 @@ require 'matrimony'
 require 'spec'
 require 'spec/autorun'
 
-%w(matrimony_command git_helper).each do |helper|
-  require "spec_helpers/#{helper}"
-end
+# Interesting reads
+# http://devver.net/blog/2009/08/unit-testing-filesystem-interaction/
+# http://devver.net/blog/2009/07/a-dozen-or-so-ways-to-start-sub-processes-in-ruby-part-2/
+# http://devver.net/blog/2009/07/a-command-line-prompt-with-timeout-and-countdown/
 
 SPEC_ROOT = File.dirname(__FILE__)
+Dir["#{SPEC_ROOT}/spec_helpers/*"].each { |helper| require helper }
 
 Spec::Runner.configure do |config|
   config.include MatrimonyCommand
