@@ -11,10 +11,14 @@ begin
     gem.homepage = "http://github.com/bjeanes/matrimony"
     gem.authors = ["Bodaniel Jeanes"]
     gem.rubyforge_project = "matrimony"
+    
+    gem.add_dependency 'highline', '>= 1.5.1'
+
+    gem.add_development_dependency "bmabey-clispec", ">= 0.0.2"
     gem.add_development_dependency "rspec", ">= 1.2.8"
     gem.add_development_dependency "mocha", ">= 0.9.7"
-    gem.add_development_dependency "reek"
-    gem.add_development_dependency "roodi"
+    gem.add_development_dependency "roodi", ">= 2.0.0"
+    gem.add_development_dependency "reek", ">= 1.1.3"
     
     gem.executables += %w(matrimony match)
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
